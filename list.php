@@ -17,7 +17,10 @@
 	<div class="verstka">
 		<div class="container">
 			<ul class="list-verstka" style="padding: 20px 0;line-height: 30px;">
-				<li><a href="index.html" target="_blank">Главная</a></li>
+				<li><a href="index.php" target="_blank">Главная</a></li>
+				<li><a href="listing.php" target="_blank">Listing Desktop</a></li>
+				<li><a href="listing-tag.php" target="_blank">Listing tag</a></li>
+				<li><a href="card-excurs.php" target="_blank">Card excursion</a></li>
 			</ul>
 		</div>
 	</div>

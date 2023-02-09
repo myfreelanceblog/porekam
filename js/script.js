@@ -1,4 +1,7 @@
 jQuery(document).ready(function($){
+    $.fancybox.defaults.backFocus = false;
+    $.fancybox.defaults.hash = false
+    
     $('.excurs-cat__item').on('click', function () {
         $('.excurs-cat__item').removeClass('active');
         $(this).addClass('active');
@@ -48,6 +51,81 @@ jQuery(document).ready(function($){
         navigation: {
             nextEl: '.mstock__next',
             prevEl: '.mstock__prev',
+        },
+        breakpoints: {
+            320: {
+                spaceBetween: 30,
+                slidesPerView: 1,
+            },
+            681: {
+                spaceBetween: 30,
+            },
+            1280: {
+                spaceBetween: 30,
+            }
+        }
+    })
+
+    const revexSwiper = new Swiper('.revex__swiper', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: false,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: '.revex__next',
+            prevEl: '.revex__prev',
+        },
+        breakpoints: {
+            320: {
+                spaceBetween: 30,
+                slidesPerView: 1,
+            },
+            681: {
+                spaceBetween: 30,
+            },
+            1280: {
+                spaceBetween: 30,
+            }
+        }
+    })
+
+    const relatedSwiper = new Swiper('.related__swiper', {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: false,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: '.related__next',
+            prevEl: '.related__prev',
+        },
+        breakpoints: {
+            320: {
+                spaceBetween: 30,
+                slidesPerView: 1,
+            },
+            681: {
+                spaceBetween: 30,
+            },
+            1280: {
+                spaceBetween: 30,
+            }
+        }
+    })
+
+    const interestSwiper = new Swiper('.interest__swiper', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: false,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: '.interest__next',
+            prevEl: '.interest__prev',
         },
         breakpoints: {
             320: {
@@ -255,3 +333,34 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+
+/* scroll */
+const postDetails = document.querySelector(".scroll-content");
+const postSidebar = document.querySelector(".scroll-sidebar");
+const postSidebarContent = document.querySelector(".scroll-sidebar__wrap");
+
+const controller = new ScrollMagic.Controller();
+const scene = new ScrollMagic.Scene({
+    triggerElement: postSidebar,
+    triggerHook: 0,
+    duration: getDuration
+}).addTo(controller);
+
+if (window.matchMedia("(min-width: 1280px)").matches) {
+    scene.setPin(postSidebar, { pushFollowers: false });
+}
+
+// in your projects, you might want to debounce resize event for better performance
+window.addEventListener("resize", () => {
+    if (window.matchMedia("(min-width: 1280px)").matches) {
+        scene.setPin(postSidebar, { pushFollowers: false });
+    } else {
+        scene.removePin(postSidebar, true);
+    }
+});
+
+function getDuration() {
+    return postDetails.offsetHeight - postSidebarContent.offsetHeight;
+}
