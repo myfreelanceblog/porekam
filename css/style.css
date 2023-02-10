@@ -1898,6 +1898,7 @@ body._tag .search-wrap{
 .content-map iframe{
     width: 100%;
     border: none;
+    max-width: 100%;
 }
 .content-map{
     padding: 0 0 55px;
@@ -2313,6 +2314,8 @@ body._tag .search-wrap{
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s;
+    overflow: hidden;
+    overflow-y: auto;
 }
 .open-m .mobile-menu{
     visibility: visible;
@@ -2374,4 +2377,7 @@ body._tag .search-wrap{
 }
 .mobile-menu__phone{
     margin-top: 15px;
+}
+.scroll-content .side{
+    display: none;
 }

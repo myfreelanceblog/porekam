@@ -53,6 +53,48 @@
 		<div class="container">
 			<div class="scroll">
 				<div class="scroll-content">
+					<div class="side">
+						<div class="side__title">Стоимость билетов</div>
+						<div class="side-box">
+							<div class="side-item">
+								<div class="side-item__content">
+									<span class="side-item__title">Взрослый билет:</span>
+									<div class="info-block">
+										<div class="info-block__icon"></div>
+										<div class="info-block__popup">Какой-то текст</div>
+									</div>
+								</div>
+								<div class="side-price">
+									<div class="side-price__actual">4 500 ₽</div>
+									<div class="side-price__old">6500 ₽</div>
+								</div>
+							</div>
+							<div class="side-item">
+								<div class="side-item__content">
+									<span class="side-item__title">Детский билет:</span>
+									<div class="info-block">
+										<div class="info-block__icon"></div>
+										<div class="info-block__popup">Какой-то текст</div>
+									</div>
+								</div>
+								<div class="side-price">
+									<div class="side-price__actual">2 200 ₽</div>
+								</div>
+							</div>
+							<div class="side-item">
+								<div class="side-item__content">
+									<span class="side-item__title">Льготный билет:</span>
+									<div class="info-block">
+										<div class="info-block__icon"></div>
+										<div class="info-block__popup">Какой-то текст</div>
+									</div>
+								</div>
+								<div class="side-price">
+									<div class="side-price__actual">1 400 ₽</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="top-desc">
 						<p>Вы отправитесь на Остров Котлин, который находится в Финском заливе и защищает Петербург с моря. За свою уникальную атмосферу Кронштадт внесён в список всемирного наследия ЮНЕСКО. Вас ждет пешеходная прогулка по знаковым местам. Вы посетите главный военно-морской храм России — Морской Никольский собор и пройдетесь по Петровскому доку. В парке «Остров фортов» вы совместите приятное с полезным: отдохнете в Саду памяти и узнаете об истории российского морского флота.</p>
 					</div>

@@ -95,13 +95,10 @@ jQuery(document).ready(function($){
         },
         breakpoints: {
             320: {
-                spaceBetween: 30,
+                spaceBetween: 20,
                 slidesPerView: 1,
             },
-            681: {
-                spaceBetween: 30,
-            },
-            1280: {
+            992: {
                 spaceBetween: 30,
             }
         }
@@ -120,13 +117,10 @@ jQuery(document).ready(function($){
         },
         breakpoints: {
             320: {
-                spaceBetween: 30,
+                spaceBetween: 20,
                 slidesPerView: 1,
             },
-            681: {
-                spaceBetween: 30,
-            },
-            1280: {
+            992: {
                 spaceBetween: 30,
             }
         }
@@ -166,14 +160,11 @@ jQuery(document).ready(function($){
             prevEl: '.interest__prev',
         },
         breakpoints: {
-            320: {
-                spaceBetween: 30,
+            120: {
+                spaceBetween: 20,
                 slidesPerView: 1,
             },
-            681: {
-                spaceBetween: 30,
-            },
-            1280: {
+            992: {
                 spaceBetween: 30,
             }
         }
@@ -377,13 +368,13 @@ const scene = new ScrollMagic.Scene({
     duration: getDuration
 }).addTo(controller);
 
-if (window.matchMedia("(min-width: 1280px)").matches) {
+if (window.matchMedia("(min-width: 992px)").matches) {
     scene.setPin(postSidebar, { pushFollowers: false });
 }
 
 // in your projects, you might want to debounce resize event for better performance
 window.addEventListener("resize", () => {
-    if (window.matchMedia("(min-width: 1280px)").matches) {
+    if (window.matchMedia("(min-width: 992px)").matches) {
         scene.setPin(postSidebar, { pushFollowers: false });
     } else {
         scene.removePin(postSidebar, true);
