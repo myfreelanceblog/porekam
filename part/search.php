@@ -59,7 +59,7 @@
 					</div>
 				</div>
 				<div class="search-submit">
-					<button class="search__btn"></button>
+					<button class="search__btn">Поиск экскурсии</button>
 				</div>
 				<div class="search__more">Расширенный фильтр</div>
 			</div>

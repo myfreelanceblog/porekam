@@ -1,4 +1,16 @@
 jQuery(document).ready(function($){
+    $('.mob-m').click(function(){
+        $(this).addClass('openm');
+        $('body').addClass('open-m');
+        $('footer').after('<div class="over_bg"></div>');
+    });
+
+    $(document).on('click', '.over_bg, .mobile-menu__close', function(){
+        $('.over_bg').remove();
+        $('body').removeClass('open-m');
+        $('.mob-m').removeClass('openm');
+    });
+
     $.fancybox.defaults.backFocus = false;
     $.fancybox.defaults.hash = false
     
@@ -8,6 +20,7 @@ jQuery(document).ready(function($){
     });
 
     $('.search__more').on('click', function () {
+        $(this).toggleClass('active');
         $('.search-input._more').toggleClass('active');
     })
 
@@ -29,13 +42,10 @@ jQuery(document).ready(function($){
         },
         breakpoints: {
             320: {
-                spaceBetween: 48,
+                spaceBetween: 20,
                 slidesPerView: 1,
             },
-            681: {
-                spaceBetween: 64,
-            },
-            1280: {
+            992: {
                 spaceBetween: 30,
             }
         }
@@ -54,16 +64,22 @@ jQuery(document).ready(function($){
         },
         breakpoints: {
             320: {
-                spaceBetween: 30,
+                spaceBetween: 20,
                 slidesPerView: 1,
             },
-            681: {
-                spaceBetween: 30,
-            },
-            1280: {
+            992: {
                 spaceBetween: 30,
             }
         }
+    })
+
+    const revSwiper = new Swiper('.rev__swiper', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 20,
+        speed: 600,
+        loop: false,
+        loopAdditionalSlides: 1,
     })
 
     const revexSwiper = new Swiper('.revex__swiper', {
@@ -116,6 +132,28 @@ jQuery(document).ready(function($){
         }
     })
 
+    const photoSwiper = new Swiper('.photo__swiper', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: false,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: '.photo__next',
+            prevEl: '.photo__prev',
+        },
+        breakpoints: {
+            120: {
+                spaceBetween: 20,
+                slidesPerView: 1,
+            },
+            992: {
+                spaceBetween: 30,
+            }
+        }
+    })
+
     const interestSwiper = new Swiper('.interest__swiper', {
         slidesPerView: 1,
         slidesPerGroup: 1,
@@ -153,14 +191,11 @@ jQuery(document).ready(function($){
             prevEl: '.partner__prev',
         },
         breakpoints: {
-            320: {
-                spaceBetween: 30,
+            120: {
+                spaceBetween: 20,
                 slidesPerView: 1,
             },
-            681: {
-                spaceBetween: 30,
-            },
-            1280: {
+            992: {
                 spaceBetween: 30,
             }
         }
@@ -178,14 +213,11 @@ jQuery(document).ready(function($){
             prevEl: '.news__prev',
         },
         breakpoints: {
-            320: {
-                spaceBetween: 30,
+            120: {
+                spaceBetween: 20,
                 slidesPerView: 1,
             },
-            681: {
-                spaceBetween: 30,
-            },
-            1280: {
+            992: {
                 spaceBetween: 30,
             }
         }
@@ -203,14 +235,11 @@ jQuery(document).ready(function($){
             prevEl: '.video__prev',
         },
         breakpoints: {
-            320: {
-                spaceBetween: 30,
+            120: {
+                spaceBetween: 20,
                 slidesPerView: 1,
             },
-            681: {
-                spaceBetween: 30,
-            },
-            1280: {
+            992: {
                 spaceBetween: 30,
             }
         }

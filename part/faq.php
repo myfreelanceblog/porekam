@@ -6,6 +6,9 @@
 				</div>
 				<div class="faq-content">
 					<div class="faq__title title">Вопрос-ответ</div>
+					<div class="faq-img _mob">
+						<img src="img/faq.png" alt="faq">
+					</div>
 					<div class="faq-box" itemscope itemtype="https://schema.org/FAQPage">
 						<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 							<div class="faq-item__title" itemprop="name">Речные круизы от «Прогулки по рекам и каналам»</div>

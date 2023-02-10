@@ -2,7 +2,10 @@
 
 
 	<div class="hero">
-		<img src="img/hero.jpg" alt="img">
+		<picture>
+			<source srcset="img/hero-mob.jpg" class="header-img-mob" media="(max-width: 568px)">
+			<img src="img/hero.jpg" alt="img">
+		</picture>
 	</div>
 
 	<?php include 'part/search.php'; ?>
@@ -125,6 +128,87 @@
 										<div class="news-slider__title">Заключительные рейсы на метеорах!</div>
 									</div>
 								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="photo-wrap">
+		<div class="container">
+			<div class="photo">
+				<div class="top">
+					<div class="top__title title">Фотографии с экскурсий</div>
+					<div class="top-navigation">
+						<a href="javascript:void(0);" class="top-navigation__btn">Все фото</a>
+						<div class="top-nav nav">
+							<div class="nav__item photo__prev"></div>
+							<div class="nav__item photo__next"></div>
+						</div>
+					</div>
+				</div>
+				<div class="photo-slider">
+					<div class="photo__swiper swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="photo-slider__item">
+									<a href="img/p.jpg" class="photo-item" data-fancybox="photo-excurs">
+										<img src="img/p.jpg" alt="img">
+										<div class="photo-item__title">Ночной Петербург завораживает</div>
+									</a>
+									<a href="img/p.jpg" class="photo-item" data-fancybox="photo-excurs">
+										<img src="img/p.jpg" alt="img">
+										<div class="photo-item__title">Ночной Петербург завораживает</div>
+									</a>
+									<a href="img/p.jpg" class="photo-item" data-fancybox="photo-excurs">
+										<img src="img/p.jpg" alt="img">
+										<div class="photo-item__title">Ночной Петербург завораживает</div>
+									</a>
+									<a href="img/p.jpg" class="photo-item" data-fancybox="photo-excurs">
+										<img src="img/p.jpg" alt="img">
+										<div class="photo-item__title">Ночной Петербург завораживает</div>
+									</a>
+									<a href="img/p.jpg" class="photo-item" data-fancybox="photo-excurs">
+										<img src="img/p.jpg" alt="img">
+										<div class="photo-item__title">Ночной Петербург завораживает</div>
+									</a>
+									<a href="img/p.jpg" class="photo-item" data-fancybox="photo-excurs">
+										<img src="img/p.jpg" alt="img">
+										<div class="photo-item__title">Ночной Петербург завораживает</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="photo-mob">
+					<div class="photo__swiper swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="photo-slider__item">
+									<a href="img/p.jpg" class="photo-item" data-fancybox="photo-excurs">
+										<img src="img/p.jpg" alt="img">
+										<div class="photo-item__title">Ночной Петербург завораживает</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="photo-slider__item">
+									<a href="img/p.jpg" class="photo-item" data-fancybox="photo-excurs">
+										<img src="img/p.jpg" alt="img">
+										<div class="photo-item__title">Ночной Петербург завораживает</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="photo-slider__item">
+									<a href="img/p.jpg" class="photo-item" data-fancybox="photo-excurs">
+										<img src="img/p.jpg" alt="img">
+										<div class="photo-item__title">Ночной Петербург завораживает</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>

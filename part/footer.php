@@ -23,6 +23,7 @@
 						</ul>
 					</div>
 					<div class="footer-center__item">
+						<a href="javascript:void(0);" class="footer__logo _mob"></a>
 						<div class="footer__title">Контакты</div>
 						<ul class="footer-contact">
 							<li class="footer-contact__item">
@@ -30,6 +31,7 @@
 							</li>
 							<li class="footer-contact__item">Офис продаж: <a href="mailto:trip@porekamkanalam.ru">trip@porekamkanalam.ru</a></li>
 							<li class="footer-contact__item">Пн-Вс 09:00-19:00</a></li>
+							<li class="footer-contact__line"></li>
 							<li class="footer-contact__item">Наш причал: наб. реки Фонтанки, д. 71</a></li>
 							<li class="footer-contact__item">Наш причал: наб. реки Фонтанки, д. 104</a></li>
 							<li class="footer-contact__item">Пн-Вс 09:00-00:15</a></li>
@@ -37,24 +39,28 @@
 					</div>
 				</div>
 				<div class="footer-right">
-					<div class="footer__title">Наши партнеры</div>
-					<div class="footer-partner">
-						<div class="footer-partner__item">
-							<div class="footer-partner__logo">
-								<img src="img/f1.png" alt="logo">
+					<div class="footer-partner-wrap">
+						<div class="footer__title">Наши партнеры</div>
+						<div class="footer-partner">
+							<div class="footer-partner__item">
+								<div class="footer-partner__logo">
+									<img src="img/f1.png" alt="logo">
+								</div>
+								<div class="footer-partner__title">Теплоходы компании "Теплоход СПб"</div>
 							</div>
-							<div class="footer-partner__title">Теплоходы компании "Теплоход СПб"</div>
-						</div>
-						<div class="footer-partner__item">
-							<div class="footer-partner__logo">
-								<img src="img/f2.png" alt="logo">
+							<div class="footer-partner__item">
+								<div class="footer-partner__logo">
+									<img src="img/f2.png" alt="logo">
+								</div>
+								<div class="footer-partner__title">Все теплоходы Санкт-Петербурга</div>
 							</div>
-							<div class="footer-partner__title">Все теплоходы Санкт-Петербурга</div>
 						</div>
 					</div>
-					<div class="footer__title">Мы принимаем</div>
-					<div class="footer-pay">
-						<img src="img/fpay.svg" alt="pay">
+					<div class="footer-pay-wrap">
+						<div class="footer__title">Мы принимаем</div>
+						<div class="footer-pay">
+							<img src="img/fpay.svg" alt="pay">
+						</div>
 					</div>
 					<div class="footer-social">
 						<a href="javascript:void(0);" target="_blank">

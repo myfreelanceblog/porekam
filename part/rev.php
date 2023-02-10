@@ -75,6 +75,46 @@
 						<div class="rev-item__desc">Впервые отдыхали на этом чудесном теплоходе. Понравилось всё: интерьер, сервис, организация питания , прекрасные...</div>
 					</div>
 				</div>
+
+				<div class="rev-slider">
+					<div class="rev__swiper swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="rev-item">
+									<div class="rev-item__top">
+										<div class="rev-author">
+											<div class="rev-author__icon">
+												<img src="img/a.jpg" alt="author">
+											</div>
+											<div class="rev-author__title">Наталья Некрашевич</div>
+										</div>
+										<div class="rev-author__rate rate">
+											<span>4.5</span>
+										</div>
+									</div>
+									<div class="rev-item__desc">Впервые отдыхали на этом чудесном теплоходе. Понравилось всё: интерьер, сервис, организация питания , прекрасные...</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="rev-item">
+									<div class="rev-item__top">
+										<div class="rev-author">
+											<div class="rev-author__icon">
+												<img src="img/a.jpg" alt="author">
+											</div>
+											<div class="rev-author__title">Наталья Некрашевич</div>
+										</div>
+										<div class="rev-author__rate rate">
+											<span>4.5</span>
+										</div>
+									</div>
+									<div class="rev-item__desc">Впервые отдыхали на этом чудесном теплоходе. Понравилось всё: интерьер, сервис, организация питания , прекрасные...</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<a href="javascript:void(0);" class="rev__btn click-animation">Все отзывы</a>
 			</div>
 		</div>
