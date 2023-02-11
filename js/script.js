@@ -1,4 +1,10 @@
 jQuery(document).ready(function($){
+    $('.scroll-content').prepend($('.side-copy').clone());
+    $('.boat-cat__item').on('click', function () {
+        $('.boat-cat__item, .boat-tab__item').removeClass('active');
+        $(this).addClass('active');
+        $('.boat-tab__item').eq($(this).index()).addClass('active');
+    })
     $('.mob-m').click(function(){
         $(this).addClass('openm');
         $('body').addClass('open-m');
@@ -39,6 +45,28 @@ jQuery(document).ready(function($){
         navigation: {
             nextEl: '.what__next',
             prevEl: '.what__prev',
+        },
+        breakpoints: {
+            320: {
+                spaceBetween: 20,
+                slidesPerView: 1,
+            },
+            992: {
+                spaceBetween: 30,
+            }
+        }
+    })
+
+    const anotherSwiper = new Swiper('.another__swiper', {
+        slidesPerView: 3,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: true,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: '.another__next',
+            prevEl: '.another__prev',
         },
         breakpoints: {
             320: {
@@ -114,6 +142,28 @@ jQuery(document).ready(function($){
         navigation: {
             nextEl: '.related__next',
             prevEl: '.related__prev',
+        },
+        breakpoints: {
+            320: {
+                spaceBetween: 20,
+                slidesPerView: 1,
+            },
+            992: {
+                spaceBetween: 30,
+            }
+        }
+    })
+
+    const actualSwiper = new Swiper('.actual__swiper', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: false,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: '.actual__next',
+            prevEl: '.actual__prev',
         },
         breakpoints: {
             320: {
