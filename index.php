@@ -1,11 +1,23 @@
 <?php include 'part/header.php'; ?>
 
 
-	<div class="hero">
-		<picture>
+	<div class="hero _main">
+		<!-- <picture>
 			<source srcset="img/hero-mob.jpg" class="header-img-mob" media="(max-width: 568px)">
-			<img src="img/hero.jpg" alt="img">
-		</picture>
+			<img src="img/sky2.jpg" alt="img">
+		</picture> -->
+		<div class="hero-bottom"></div>
+		<div class="hero-img"></div>
+		<div class="sobor-main"></div>
+		<div class="hero-wave"></div>
+		<div class="ship-main"></div>
+		<div class="bridge-main"></div>
+		
+		<div class="bird-main"></div>
+		<div class="birds-main"></div>
+		<div class="sun"></div>
+		<div class="noise"></div>
+		<div class="title-main"></div>
 	</div>
 
 	<?php include 'part/search.php'; ?>

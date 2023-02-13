@@ -13,6 +13,9 @@
 	.header__phone{
 		padding-right: 0;
 	}
+	.title-main{
+		left: calc(50% - 170px);
+	}
 }
 @media all and (max-width: 1210px){
 	.header__nav{
@@ -88,6 +91,55 @@
 	}
 	.events-item__title{
 		font-size: 14px;
+	}
+	.hero._main{
+		height: 325px;
+	}
+	.hero-wave:before,
+	.hero-wave:after{
+		height: 46px;
+	}
+	.hero-wave:before{
+		bottom: 30px;
+	}
+	.hero-img{
+		height: calc(100% - 46px);
+	}
+	.sun{
+		width: 122px;
+		height: 122px;
+	}
+	.birds-main{
+		width: 143px;
+		height: 98px;
+	}
+	.sobor-main{
+		width: 89px;
+		height: 217px;
+		bottom: 46px;
+		right: 145px;
+	}
+	.ship-main{
+		width: 200px;
+		height: 168px;
+		bottom: 39px;
+	}
+	.bridge-main{
+		width: 345px;
+		height: 121px;
+		bottom: 46px;
+	}
+	.bird-main{
+		width: 61px;
+		height: 52px;
+		top: 65px;
+	}
+	.title-main{
+		width: 261px;
+		height: 99px;
+		left: 40px;
+		top: 40px;
+		transform: unset;
 	}
 }
 @media all and (max-width: 992px){
@@ -915,6 +967,9 @@
 	.scroll-content .side-row{
 		display: none;
 	}
+	.bridge-main{
+		transform: translateX(-22%);
+	}
 }
 @media all and (max-width: 768px){
 	.detail-box{
@@ -1020,6 +1075,50 @@
 		-webkit-mask-image: -webkit-radial-gradient(white, black);
 	}
 	.another-item:hover img{
+		filter: unset;
+	}
+	.bridge-main{
+		width: 243px;
+		height: 86px;
+	}
+	.ship-main{
+		width: 153px;
+		height: 128px;
+	}
+	.sobor-main{
+		width: 65px;
+		height: 159px;
+		right: 23px;
+		z-index: 1;
+	}
+	.sun{
+		width: 77px;
+		height: 77px;
+		right: 50px;
+		top: 124px;
+		z-index: 0;
+	}
+	.title-main{
+		width: 204px;
+		height: 77px;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 23px;
+	}
+	.bird-main{
+		width: 45px;
+		height: 39px;
+		top: 59px;
+		left: 77px;
+	}
+	.birds-main{
+		width: 96px;
+		height: 66px;
+	}
+	.birds-main{
+		top: 113px;
+	}
+	.another-item:hover img, .boat-box__item:hover img, .mstock-slider__item:hover img, .photo-item:hover img, .actual-item:hover .actual-item__img img, .related-slider__item:hover .related-slider__img img, .interest-slider__link:hover img, .tcard-gallery a:hover{
 		filter: unset;
 	}
 }

@@ -1501,6 +1501,10 @@ footer{
 }
 .hero{
     position: relative;
+    overflow: hidden;
+}
+.hero._main{
+    height: 500px;
 }
 .hero-bread{
     position: absolute;
@@ -1542,6 +1546,7 @@ footer{
 .search-wrap{
     margin-top: -38px;
     position: relative;
+    z-index: 9;
 }
 body._listing .excurs-wrap{
     padding-top: 60px;
@@ -2750,4 +2755,180 @@ body._tag .search-wrap{
 }
 .scroll-sidebar__wrap{
     padding-bottom: 20px;
+}
+.hero-wave:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background: url(../img/wave-top.svg) repeat-x bottom center;
+    left: 0;
+    bottom: 47px;
+    background-size: contain;
+    animation: waveMain 5s alternate infinite;
+    z-index: 1;
+}
+.hero-wave:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background: url(../img/wave-bottom.svg) repeat-x bottom center;
+    left: 0;
+    bottom: 0;
+    background-size: contain;
+    animation: waveMain 5s alternate infinite;
+    animation-delay: 1s;
+    z-index: 3;
+}
+@keyframes waveMain{
+    0%{
+        background-position-x: 50px;
+    }
+    25%{
+        background-position-x: 0;
+    }
+     25%{
+        background-position-x: 50px;
+    }
+    100%{
+        background-position-x: 0;
+    }
+}
+.ship-main{
+    display: block;
+    position: absolute;
+    width: 308px;
+    height: 258px;
+    background: url(../img/ship-main.png) no-repeat center;
+    background-size: contain;
+    bottom: 60px;
+    z-index: 2;
+    left: 53%;
+    animation: shakeShip 12s alternate infinite;
+}
+@keyframes shakeShip{
+    0%{
+        transform: rotate(0) translateX(-60%);
+    }
+    35%{
+        transform: rotate(3deg) translateX(-60%);
+    }
+    65%{
+        transform: rotate(-3deg) translateX(-60%);
+    }
+    100%{
+        transform: rotate(0) translateX(-60%);
+    }
+}
+.bridge-main{
+    display: block;
+    position: absolute;
+    width: 530px;
+    height: 186px;
+    background: url(../img/bridge.png) no-repeat center;
+    bottom: 70px;
+    background-size: contain;
+    left: 0;
+    z-index: 0;
+}
+.sobor-main{
+    display: block;
+    position: absolute;
+    width: 137px;
+    height: 334px;
+    background: url(../img/sobor.png) no-repeat center;
+    bottom: 70px;
+    background-size: contain;
+    right: 220px;
+    z-index: 0;
+}
+.bird-main{
+    display: block;
+    position: absolute;
+    width: 93px;
+    height: 80px;
+    background: url(../img/bird.png) no-repeat center;
+    top: 105px;
+    background-size: contain;
+    left: calc(50% - 35px);
+    z-index: 0;
+    transform: translateX(-100%);
+    animation: flyBird 10s alternate infinite;
+}
+@keyframes flyBird{
+    0%{
+        transform: translate(-100%, 0);
+    }
+    100%{
+        transform: translate(-100%, 10px);
+    }
+}
+.birds-main{
+    display: block;
+    position: absolute;
+    width: 220px;
+    height: 151px;
+    background: url(../img/birds.png) no-repeat center;
+    top: 77px;
+    background-size: contain;
+    right: 0;
+    z-index: 0;
+    animation: flyBirds 10s alternate infinite;
+    animation-delay: 1s;
+    z-index: 2;
+}
+@keyframes flyBirds{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(0, 10px);
+    }
+}
+.sun{
+    display: block;
+    position: absolute;
+    width: 188px;
+    height: 188px;
+    background: #F4F4CB;
+    border-radius: 50%;
+    right: 54px;
+    top: 46px;
+    z-index: 1;
+}
+.hero-img{
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    display: block;
+    background: url(../img/sky.jpg) no-repeat bottom center;
+    background-size: cover;
+}
+.noise{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 20px);
+    left: 0;
+    top: 0;
+    background: url(../img/noise.png) no-repeat center;
+    z-index: 9;
+    background-size: cover;
+}
+.title-main{
+    width: 401px;
+    height: 152px;
+    background: url(../img/title.svg) no-repeat center;
+    position: absolute;
+    display: block;
+    background-size: contain;
+    left: calc(50% - 235px);
+    transform: translateX(-100%);
+    top: 58px;
 }
