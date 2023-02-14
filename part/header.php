@@ -23,6 +23,9 @@ if ($url == '/porekam/listing.php') {
 if ($url == '/porekam/listing-tag.php') {
 	$cls .= ' _tag';
 }
+if ($url == '/porekam/404.php') {
+	$cls .= ' _error';
+}
 ?>
 <body class="<?php echo $cls; ?>">
 

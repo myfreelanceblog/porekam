@@ -23,6 +23,11 @@
 				<li><a href="card-excurs.php" target="_blank">Card excursion</a></li>
 				<li><a href="boat.php" target="_blank">Boat</a></li>
 				<li><a href="card-boat.php" target="_blank">Card boat</a></li>
+				<li><a href="articles.php" target="_blank">Articles</a></li>
+				<li><a href="card-articles.php" target="_blank">Articles card</a></li>
+				<li><a href="sale.php" target="_blank">Sale</a></li>
+				<li><a href="card-sale.php" target="_blank">Card Sale</a></li>
+				<li><a href="404.php" target="_blank">404</a></li>
 			</ul>
 		</div>
 	</div>

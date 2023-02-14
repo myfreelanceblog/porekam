@@ -52,7 +52,7 @@
 	<div class="scroll-wrap">
 		<div class="container">
 			<div class="scroll">
-				<div class="scroll-content">
+				<div class="scroll-content scrl-content">
 					<div class="side">
 						<div class="side__title">Стоимость билетов</div>
 						<div class="side-box">
@@ -296,8 +296,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="scroll-sidebar">
-					<div class="scroll-sidebar__wrap">
+				<div class="scroll-sidebar scrl-sidebar">
+					<div class="scroll-sidebar__wrap scrl-wrap">
 						<div class="side">
 							<div class="side__title">Стоимость билетов</div>
 							<div class="side-box">

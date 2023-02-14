@@ -1,4 +1,23 @@
 jQuery(document).ready(function($){
+    $('.contents__list a').on('click', function (e) {
+        e.preventDefault();
+        var navPos = $($(this).attr('href')).offset().top - 30;
+        $("html, body").animate({ scrollTop: navPos }, 600);
+        return false;
+    });
+
+    $('.share-copy').click(function() {
+        $('.share-popup').css('width', $('.share-popup').outerWidth());
+        let btn = $(this);
+        let oldTxt = $(this).text();
+        $(btn).html('Скопировано');
+        navigator.clipboard.writeText(window.location.href);
+    });
+
+    $(".share-telegram").click(function(){window.open('https://telegram.me/share/url?url='+location.href,'sharer','toolbar=0,status=0,width=700,height=400');});
+    $(".share-vk").click(function(){window.open('https://vkontakte.ru/share.php?url='+location,'sharer','toolbar=0,status=0,width=700,height=400');});
+    $(".share-fb").click(function(){window.open('https://www.facebook.com/sharer.php?u='+location,'sharer','toolbar=0,status=0,width=700,height=400');});
+
     $('.scroll-content').prepend($('.side-copy').clone());
     $('.boat-cat__item').on('click', function () {
         $('.boat-cat__item, .boat-tab__item').removeClass('active');
@@ -90,6 +109,68 @@ jQuery(document).ready(function($){
             nextEl: '.mstock__next',
             prevEl: '.mstock__prev',
         },
+        breakpoints: {
+            320: {
+                spaceBetween: 20,
+                slidesPerView: 1,
+            },
+            992: {
+                spaceBetween: 30,
+            }
+        }
+    })
+
+    const anotherSlSwiper = new Swiper('.another-slider__swiper', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: false,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: '.another-sale__next',
+            prevEl: '.another-sale__prev',
+        },
+        breakpoints: {
+            320: {
+                spaceBetween: 20,
+                slidesPerView: 1,
+            },
+            992: {
+                spaceBetween: 30,
+            }
+        }
+    })
+
+    const sameSwiper = new Swiper('.same__swiper', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: false,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: '.same-article__next',
+            prevEl: '.same-article__prev',
+        },
+        breakpoints: {
+            320: {
+                spaceBetween: 20,
+                slidesPerView: 1,
+            },
+            992: {
+                spaceBetween: 30,
+            }
+        }
+    })
+
+    const contentsSwiper = new Swiper('.contents-slider__swiper', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: false,
+        loopAdditionalSlides: 1,
         breakpoints: {
             320: {
                 spaceBetween: 20,
@@ -407,9 +488,9 @@ document.addEventListener("click", closeAllSelect);
 
 
 /* scroll */
-const postDetails = document.querySelector(".scroll-content");
-const postSidebar = document.querySelector(".scroll-sidebar");
-const postSidebarContent = document.querySelector(".scroll-sidebar__wrap");
+const postDetails = document.querySelector(".scrl-content");
+const postSidebar = document.querySelector(".scrl-sidebar");
+const postSidebarContent = document.querySelector(".scrl-wrap");
 
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({

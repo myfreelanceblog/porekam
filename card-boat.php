@@ -50,7 +50,7 @@
 	<div class="scroll-wrap">
 		<div class="container">
 			<div class="scroll">
-				<div class="scroll-content">
+				<div class="scroll-content scrl-content">
 					<div class="top-desc">
 						<p>Самый новый и самый шикарный круизный корабль в России. Вполне по делу позиционируется как теплоход класса «Люкс». По сути, это 5-звёздочный отель на воде. Ведь все его каюты по комфорту и набору удобств ничуть не уступают береговым гостиницам высокой категории.</p>
 					</div>
@@ -167,8 +167,8 @@
 					</div>
 				</div>
 
-				<div class="scroll-sidebar">
-					<div class="scroll-sidebar__wrap">
+				<div class="scroll-sidebar scrl-sidebar">
+					<div class="scroll-sidebar__wrap scrl-wrap">
 						<div class="side side-copy">
 							<div class="side__title">Стоимость аренды</div>
 							<div class="price-alone">
