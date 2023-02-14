@@ -28,6 +28,9 @@
 				<li><a href="sale.php" target="_blank">Sale</a></li>
 				<li><a href="card-sale.php" target="_blank">Card Sale</a></li>
 				<li><a href="404.php" target="_blank">404</a></li>
+				<li><a href="buy.php" target="_blank">Buy</a></li>
+				<li><a href="contacts.php" target="_blank">Contacts</a></li>
+				<li><a href="review.php" target="_blank">Review</a></li>
 			</ul>
 		</div>
 	</div>

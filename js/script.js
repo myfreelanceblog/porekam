@@ -54,6 +54,70 @@ jQuery(document).ready(function($){
     })
     $('.faq-item__title').first().click();
 
+    const yaSwiper = new Swiper('.ya-swiper', {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: true,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: '.ya-next',
+            prevEl: '.ya-prev',
+        },
+        breakpoints: {
+            320: {
+                spaceBetween: 20,
+                slidesPerView: 1,
+            },
+            992: {
+                spaceBetween: 30,
+            }
+        }
+    })
+    const gSwiper = new Swiper('.g-swiper', {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: true,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: '.g-next',
+            prevEl: '.g-prev',
+        },
+        breakpoints: {
+            320: {
+                spaceBetween: 20,
+                slidesPerView: 1,
+            },
+            992: {
+                spaceBetween: 30,
+            }
+        }
+    })
+    const gisSwiper = new Swiper('.gis-swiper', {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: true,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: '.gis-next',
+            prevEl: '.gis-prev',
+        },
+        breakpoints: {
+            320: {
+                spaceBetween: 20,
+                slidesPerView: 1,
+            },
+            992: {
+                spaceBetween: 30,
+            }
+        }
+    })
+
     const whatSwiper = new Swiper('.what__swiper', {
         slidesPerView: 3,
         slidesPerGroup: 1,
